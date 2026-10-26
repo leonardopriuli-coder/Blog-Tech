@@ -1,117 +1,170 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+:root {
+    --cor-primairia: #cc0000;
+    --cor-secundaria: #ffffff;
+    --cor-titulo: #cc0000;
+    --cor-fundo: #ffffff;
+    --cor-texto: #cc0000;
+    --cor-contraste: #ffffff;
+    --cor-botao: #cc0000;
+    --fonte-texto: 'Segoe UI', sans-serif;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu blog Tech</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
+.tema-escuro {
+    --cor-primairia: #ff4d4d;
+    --cor-secundaria: #ffffff;
+    --cor-titulo: #ff4d4d;
+    --cor-fundo: #2e2e2e;
+    --cor-texto: #ff4d4d;
+    --cor-contraste: #2e2e2e;
+    --cor-botao: #ff4d4d;
+}
 
-<body>
-    <header>
-        <h1>Meu Blog Tech</h1>
-        <h3 class="subtitulo">Vou compartilhar conhecimentos sobre tecnologia e programação!</h3>
-    </header>
+.tema-escuro p {
+    color: var(--cor-secundaria);
+}
 
-    <main>
-        <article>
-            <img src="Img/logofil.png" class="imagem-logo" alt="Logo Filosofia em Grego">
-            <div>
-                <h2>Apresentação</h2>
-                <p class="artigo-autor">Por: Vitória Manuella</p>
-                <p>Olá, senhoras e senhores, como Monitora de Pensamento Computacional
-                e uma pessoa que gosta muito de programação, trouxe por aqui um breve 
-                resumo sobre as 4 principais linguagens de programação. Espero que goste!
-                </p>
-            </div>
-        </article>
-        <article>
-             <img src="Img/html (1).png" class="imagem-html" alt="Logo html png">
-            <div>
-                <h2>HTML</h2>
-                <p class="artigo-autor">(HyperText Markup Language)</p>
-                <p>É a estrutura básica de qualquer site. Ele funciona como o "esqueleto" da página,
-                utilizando marcas (chamadas de tags) para organizar e apresentar os elementos na tela,
-                como títulos, parágrafos, imagens, botões e links.</p>
-    
-                <button class="button-1" type="button">
-                    <img src="Img/coracao (1).png" class="imagem-coracao" alt="Coração Azul">
-                    <span>0</span>
-                </button>
-    
-                <button class="button-2" type="button">
-                    <img src="Img/polegar-para-cima.png" class="imagem-polegar" alt="Polegar Azul">
-                    <span>0</span>
-                </button>
-            </div>
-        </article>
-        <article>
-             <img src="Img/css-3.png" class="imagem-css" alt="Logo Css png">
-            <div>
-                <h2>CSS</h2>
-                <p class="artigo-autor">(Cascading Style Sheets)</p>
-                <p>É o responsável pela aparência e estilo do site, funcionando como a "pele" ou a "roupa"
-                do HTML. Com o CSS, você define cores, fontes, espaçamentos, tamanhos e como os elementos
-                se organizam em telas de computadores ou celulares.</p>
-    
-                <button class="button-1" type="button">
-                    <img src="Img/coracao (1).png" class="imagem-coracao" alt="Coração Azul">
-                    <span>0</span>
-                </button>
-    
-                <button class="button-2" type="button">
-                    <img src="Img/polegar-para-cima.png" class="imagem-polegar" alt="Polegar Azul">
-                    <span>0</span>
-                </button>
-            </div>
-        </article>
-        <article>
-             <img src="Img/arquivo-js.png" class="imagem-js" alt="Logo js em png">
-            <div>
-                <h2>JS</h2>
-                <p class="artigo-autor">(JavaScript)</p>
-                <p>É a linguagem de programação que traz interatividade e dinamismo para as páginas web.
-                Enquanto o HTML cria a estrutura e o CSS estiliza, o JavaScript funciona como o "sistema nervoso", 
-                permitindo criar animações, menus interativos, validar formulários e atualizar dados em tempo real 
-                sem recarregar a página.</p>
-    
-                <button class="button-1" type="button">
-                    <img src="Img/coracao (1).png" class="imagem-coracao" alt="Coração Azul">
-                    <span>0</span>
-                </button>
-    
-                <button class="button-2" type="button">
-                    <img src="Img/polegar-para-cima.png" class="imagem-polegar" alt="Polegar Azul">
-                    <span>0</span>
-                </button>
-            </div>
-        </article>
-        <article>
-             <img src="Img/python(1).png" class="imagem-py" alt="Logo python png">
-            <div>
-                <h2>PY</h2>
-                <p class="artigo-autor">(Python)</p>
-                <p>É uma linguagem de programação genérica, muito popular por sua sintaxe simples
-                e fácil de ler. Ela é amplamente utilizada fora do navegador, servindo para desenvolvimento
-                de sistemas web (backend), automação de tarefas, inteligência artificial, análise de dados e 
-                criação de jogos.</p>
-    
-                <button class="button-1" type="button">
-                    <img src="Img/coracao (1).png" class="imagem-coracao" alt="Coração Azul">
-                    <span>0</span>
-                </button>
-    
-                <button class="button-2" type="button">
-                    <img src="Img/polegar-para-cima.png" class="imagem-polegar" alt="Polegar Azul">
-                    <span>0</span>
-                </button>
-            </div>
-        </article>
-        
-        <button class="btn-tema-escuro">🌗</button>
-    </main>
-</body>
+body {
+    max-width: 100vw;
+    font-family: var(--fonte-texto);
+}
 
-</html>
+header {
+    background-color: var(--cor-primairia);
+    color: var(--cor-contraste);
+    text-align: center;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 30px;
+    border: 1px solid rgba(32, 15, 15, 0.2);
+}
+
+.subtitulo {
+    color: var(--cor-contraste);
+    font-size: medium;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--cor-contraste);
+    margin: 0;
+}
+
+main {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primairia);
+    margin: 0 auto;
+    padding: 16px;
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid var(--cor-primairia);
+    border-radius: 20px; 
+    margin: 16px;
+    padding: 24px;
+    gap: 16px;
+    flex: 1 1 300px; 
+    max-width: 380px;
+    background-color: transparent;
+}
+
+.artigo-autor {
+    font-weight: bold;
+}
+
+.imagem-logo {
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0px 0px 12px grey);
+    border-radius: 55%;
+    object-fit: cover;
+}
+
+.imagem-html {
+    width: 55px;
+    height: 55px;
+    filter: drop-shadow(0px 0px 12px grey);
+    margin-right: 15px;
+}
+
+.imagem-css {
+    width: 55px;
+    height: 55px;
+    filter: drop-shadow(0px 0px 12px grey);
+    margin-right: 15px;
+}
+
+.imagem-js {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0px 0px 12px grey);
+    margin-right: 15px;
+}
+
+.imagem-py {
+    width: 45px;
+    height: 45px;
+    filter: drop-shadow(0px 0px 12px grey);
+    margin-right: 15px;
+}
+
+.imagem-coracao,
+.imagem-polegar {
+    width: 20px;
+    height: 20px;
+}
+
+.button-1 {
+    width: 50px;
+    height: 25px;
+    padding: 10px;
+    border: 2px solid var(--cor-primairia);
+    background-color: transparent;
+    color: var(--cor-texto);
+    border-radius: 5px;
+    margin: 0;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-2 {
+    width: 50px;
+    height: 25px;
+    padding: 10px;
+    border: 2px solid var(--cor-primairia);
+    background-color: transparent;
+    color: var(--cor-texto);
+    border-radius: 5px;
+    margin: 0;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-tema-escuro {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    font-size: 32px;
+    padding: 12px;
+    background-color: var(--cor-primairia);
+    border-radius: 50%;
+    border: none;
+    color: #ffffff;
+}
