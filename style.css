@@ -4,19 +4,19 @@
     --cor-titulo: #003791;
     --cor-fundo: #f4f5f7;
     --cor-texto: #e60012;
-    --cor-contraste: #009e47;
+    --cor-contraste: #07da66;
     --cor-botao: #0060a8;
     --fonte-texto: 'Segoe UI', sans-serif;
 }
 
 .tema-escuro {
-    --cor-primairia: #107c41;
+    --cor-primairia: #07da66;
     --cor-secundaria: #ffffff;
-    --cor-titulo: #009e47;
+    --cor-titulo: #07da66;
     --cor-fundo: #0b132b;
     --cor-texto: #0080ff;
     --cor-contraste: #e60012;
-    --cor-botao: #009e47;
+    --cor-botao: #07da66;
 }
 
 .tema-escuro p {
