@@ -85,8 +85,8 @@ article {
 }
 
 .imagem-logo {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     filter: drop-shadow(0px 0px 12px grey);
     border-radius: 55%;
     object-fit: cover;
@@ -96,8 +96,8 @@ article {
 .imagem-css,
 .imagem-js,
 .imagem-py {
-    width: 55px;
-    height: 55px;
+    width: 80px;
+    height: 80px;
     filter: drop-shadow(0px 0px 12px grey);
     margin-right: 15px;
 }
