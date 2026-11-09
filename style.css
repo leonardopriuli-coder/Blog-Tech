@@ -1,22 +1,22 @@
 :root {
-    --cor-primairia: #cc0000;
+    --cor-primairia: #003791;
     --cor-secundaria: #ffffff;
-    --cor-titulo: #cc0000;
-    --cor-fundo: #ffffff;
-    --cor-texto: #cc0000;
-    --cor-contraste: #ffffff;
-    --cor-botao: #cc0000;
+    --cor-titulo: #003791;
+    --cor-fundo: #f4f5f7;
+    --cor-texto: #e60012;
+    --cor-contraste: #107c41;
+    --cor-botao: #0060a8;
     --fonte-texto: 'Segoe UI', sans-serif;
 }
 
 .tema-escuro {
-    --cor-primairia: #ff4d4d;
+    --cor-primairia: #107c41;
     --cor-secundaria: #ffffff;
-    --cor-titulo: #ff4d4d;
-    --cor-fundo: #2e2e2e;
-    --cor-texto: #ff4d4d;
-    --cor-contraste: #2e2e2e;
-    --cor-botao: #ff4d4d;
+    --cor-titulo: #107c41;
+    --cor-fundo: #0b132b;
+    --cor-texto: #0080ff;
+    --cor-contraste: #e60012;
+    --cor-botao: #107c41;
 }
 
 .tema-escuro p {
@@ -26,6 +26,7 @@
 body {
     max-width: 100vw;
     font-family: var(--fonte-texto);
+    background-color: var(--cor-fundo);
 }
 
 header {
@@ -70,11 +71,11 @@ article {
     text-align: center;
     justify-content: center;
     border: 2px solid var(--cor-primairia);
-    border-radius: 20px; 
+    border-radius: 20px;
     margin: 16px;
     padding: 24px;
     gap: 16px;
-    flex: 1 1 300px; 
+    flex: 1 1 300px;
     max-width: 380px;
     background-color: transparent;
 }
@@ -91,30 +92,12 @@ article {
     object-fit: cover;
 }
 
-.imagem-html {
-    width: 55px;
-    height: 55px;
-    filter: drop-shadow(0px 0px 12px grey);
-    margin-right: 15px;
-}
-
-.imagem-css {
-    width: 55px;
-    height: 55px;
-    filter: drop-shadow(0px 0px 12px grey);
-    margin-right: 15px;
-}
-
-.imagem-js {
-    width: 50px;
-    height: 50px;
-    filter: drop-shadow(0px 0px 12px grey);
-    margin-right: 15px;
-}
-
+.imagem-html,
+.imagem-css,
+.imagem-js,
 .imagem-py {
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     filter: drop-shadow(0px 0px 12px grey);
     margin-right: 15px;
 }
@@ -125,22 +108,7 @@ article {
     height: 20px;
 }
 
-.button-1 {
-    width: 50px;
-    height: 25px;
-    padding: 10px;
-    border: 2px solid var(--cor-primairia);
-    background-color: transparent;
-    color: var(--cor-texto);
-    border-radius: 5px;
-    margin: 0;
-    box-sizing: border-box;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-
+.button-1,
 .button-2 {
     width: 50px;
     height: 25px;
