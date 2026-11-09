@@ -4,7 +4,7 @@
     --cor-titulo: #003791;
     --cor-fundo: #f4f5f7;
     --cor-texto: #e60012;
-    --cor-contraste: #107c41;
+    --cor-contraste: #009e47;
     --cor-botao: #0060a8;
     --fonte-texto: 'Segoe UI', sans-serif;
 }
@@ -12,11 +12,11 @@
 .tema-escuro {
     --cor-primairia: #107c41;
     --cor-secundaria: #ffffff;
-    --cor-titulo: #107c41;
+    --cor-titulo: #009e47;
     --cor-fundo: #0b132b;
     --cor-texto: #0080ff;
     --cor-contraste: #e60012;
-    --cor-botao: #107c41;
+    --cor-botao: #009e47;
 }
 
 .tema-escuro p {
